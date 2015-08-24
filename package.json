@@ -1,0 +1,24 @@
+{
+  "name": "jean",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "latest",
+    "gulp": "latest",
+    "node": "latest"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "description": "Projeto de estudos para conhecer ferramentas de desenvolvimento",
+  "main": "server",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "MEANStack"
+  },
+  "keywords": [
+    "MEAN"
+  ],
+  "author": "Jean Gonçalves",
+  "license": "ISC"
+}
