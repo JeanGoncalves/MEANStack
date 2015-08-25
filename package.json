@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "express": "latest",
+    "forever": "^0.15.1",
     "gulp": "latest",
     "node": "latest"
   },
