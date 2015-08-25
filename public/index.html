@@ -16,13 +16,24 @@
 					<th>Nome</th>
 					<th>Email</th>
 					<th>Telefone</th>
+					<th>Ações</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<td>Jean</td>
-					<td>Jean@live.com</td>
-					<td>23-2323 2323</td>
+					<td><div class="ui input focus"><input ng-model="contact.name"></div></td>
+					<td><div class="ui input"><input ng-model="contact.email"></div></td>
+					<td><div class="ui input"><input ng-model="contact.telefone"></div></td>
+					<td><button class="ui button" ng-click="addContact()">Add Contact</button><button class="ui button" ng-click="clearContact()">Clear</button></td>
+				</tr>
+				<tr ng-repeat="contact in contactlist">
+					<td>{{contact.name}}</td>
+					<td>{{contact.email}}</td>
+					<td>{{contact.telefone}}</td>
+					<td>
+						<button class="ui circular button red" ng-click="remove(contact._id)">Del</button>
+						<button class="ui circular button blue" ng-click="edit(contact._id)">Edit</button>
+					</td>
 				</tr>
 			</tbody>
 		</table>
